@@ -3,22 +3,14 @@ import java.util.Scanner;
 
 public class Program1 {
     public static void main(String[] args) {
-        int x, y, z;
-        try (Scanner in = new Scanner(System.in)) {
-            System.out.print("Enter the value of x: ");
-            x = in.nextInt();
-
-            System.out.print("Enter the value of y: ");
-            y = in.nextInt();
-
-            z = x + y;
-            System.out.println("Value of z: " + z);
-
-            if (x % 2 == 0) {
-                System.out.println("Even");
-            } else {
-                System.out.println("Odd");
-            }
+        int x;
+        Scanner input = new Scanner(System.in);
+        x = input.nextInt();
+        if (x % 2 == 0) {
+            System.out.println("even");
+        } else {
+            System.out.println("odd");
         }
+    input.close();
     }
 }
